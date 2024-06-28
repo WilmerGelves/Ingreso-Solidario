@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/d198076214.js" crossorigin="anonymous"></script>
+    <title>Ingreso Solidario</title>
+</head>
+<body>
+    <!--Contenedor Universal-->
+    <div class="contenedor">
+
+       <!--Navegación--> 
+        <header id="cabeza" class="cabeza">
+            <nav class="navegacion">
+                <a href="#" class="nav-link">Inicio</a>
+                <a href="#" class="nav-link">¿Qué es?</a>
+                <a href="#" class="nav-link"><img class="img-gobierno" src="img/logo-gobierno (1).svg" alt="logo-gobierno"></a>
+                <a href="#" class="nav-link">Entrega</a>
+                <a href="#" class="nav-link consultar">Consultar</a>
+            </nav>
+        </header>
+
+        <!--Formulario de consulta y  descripción breve del programa-->
+        <section class="consulta">
+            <div class="contenedor-formulario">
+                <div class="formulario">
+                    <form method="post">
+                        <h3>Consulta tu estado del</h3>
+                        <h3>Ingreso</h3>
+                        <h3>Solidario </h3>
+                        <p>Por favor ingresa tus datos personales para revisar el estado de entrega de tu ingreso.</p>
+                        <div class="form-input">
+                            <label for="tipo">Tipo de Documento
+                                <select name="documento" aria-label="Seleccione el tipo de documento" id="tipo">
+                                    <option value="tipo1">Cedula de Ciudadanía</option>
+                                    <option value="tipo2">Cedula de extranjería</option>
+                                    <option value="tipo3">Pasaporte</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="form-input">
+                            <label for="identificacion">Número de Documento
+                                <input id="identificacion" type="text" name="cedula" required>
+                            </label>
+                        </div>
+                        <div class="form-input">
+                            <label for="nombre">Primer Nombre
+                                <input id="nombre" type="text" name="nombre" required>
+                            </label>
+                        </div>
+                        <div class="form-input">
+                            <label for="apellido">Primer Apellido
+                                <input id="apellido" type="text" name="apellido" required>
+                            </label>
+                        </div>
+                        <div class="form-input">
+                            <label for="fecha">Fecha de expedición del Documento
+                                <input id="fecha" type="date" name="expedicion" required>
+                            </label>
+                        </div>
+                        <div class="form-input">
+                            <label for="telefono">Teléfono Móvil
+                                <input id="telefono" type="text" name="telefono" required>
+                            </label>
+                        </div>
+                        <div class="botton-superior">
+                            <button  type="submit" onclick="alert('Cosulta realizada con éxito');">Consultar</button>
+                        </div>
+                        
+                    </form>
+                </div>
+
+                <div class="descripcion ">
+                    <h2>Ingreso Solidario</h2>
+                    <p>Debido a la situación generada por el COVID-19, el gobierno nacional aportará a las familias más afectadas y que no pertenezcan a algún programa social, un subcidio por $160.000</p>
+                    <div class="botton-superior">
+                        <button  type="button">Conocer más</button>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <!--Información del proyecto-->
+        <h2 class="que-es">¿Qué es el ingreso solidario?</h2>
+        <section class="informacion">
+            <div class="info-texto">
+                <p class="words">Es un esquema mediante el cual se entrega una transferencia monetaria en favor de los hogares en situación de pobreza y vulnerabilidad que no sean beneficiarios de programas sociales del estado.</p>
+
+                <p class="words">Los hogares en condición de pobreza y vulnerabilidad, afectados en sus ingresos como consecuencia del coronavirus, que no hagan parte de los programas sociales "Familias en Acción", "Colombia Mayor", "Jóvenes en Acción"  y "Devolución del IVA" podran acceder a esta medida social.</p>
+                <div class="botton-etapas">
+                    <a class="etapas-link" href="#">
+                        <p>Conocer las etapas de entrega</p>
+                        <img src="img/abajo.svg" alt="flecha">
+                    </a>
+                </div>
+            </div>
+            <div class="icono-grande">
+                <img src="img/recorte.png" alt="paracaidas">
+            </div>
+        </section>
+
+        <!--Sección de bancos y tiempos de entrega-->
+        <section class="etapas-bancos">
+            <h2 class="titulo-etapas">Etapas de Entrega</h2>
+            <div class="fechas">
+                <div class="fechas-item">
+                    <p class="etapa">Etapa 1</p>
+                    <p class="dia">Desde el 7 de Abril</p>
+                </div>
+                <div class="fechas-item">
+                    <p class="etapa">Etapa 2</p>
+                    <p class="dia">9 de Abril al 18 de Abril</p>
+                </div>
+                <div class="fechas-item">
+                    <p class="etapa">Etapa 3</p>
+                    <p class="dia">18 de Abril al 25 de Abril</p>
+                </div>
+            </div>
+            <h2 class="titulo-bancos">Bancos Autorizados</h2>
+            <div class="bancos">
+                <div class="banco-item">
+                    <img src="img/bancamia.png" alt="logo-bancamia">
+                </div>
+                <div class="banco-item">
+                    <img src="img/bancolombia.png" alt="logo-bancolombia">
+                </div>
+                <div class="banco-item">
+                    <img src="img/Caja_Social.png" alt="logo-cajasocial">
+                </div>
+                <div class="banco-item">
+                    <img src="img/Logo Flat.png" alt="logo-movil">
+                </div>
+                <div class="banco-item">
+                    <img src="img/diviplata.png" alt="daviplata">
+                </div>
+            </div>
+            <div class="botton-preguntas">
+                <a class="preguntas-link" href="#">
+                    <p>Preguntas Frecuentes</p>
+                    <img src="img/abajo.svg" alt="flecha">
+                </a>
+            </div>
+        </section>
+
+        <!--Seccion de preguntas frecuentes-->
+        <section class="preguntas-frecuentes">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="pregunta-respuesta">
+                <div class="bloque">
+                    <p class="circulo">1</p>
+
+                    <p class="pregunta">Yo había salido como beneficiaria en la primera fase y ahora no aparezco en el listado de beneficiarios ¿Es decir,ya no recibiré el beneficio?</p>
+
+                    <p class="respuesta">Estamos actualizando el listado de beneficiarios que recibieron el giro. Si encontró su nombre en la primera etapa y está plenamente identificado, no ha perdido su beneficio. </p>
+                </div>
+                <div class="bloque">
+                    <p class="circulo">2</p>
+
+                    <p class="pregunta">¿Por qué no aparezco ahora en el listado de ingresosolidario.prosperidadsocial.gov.co?</p>
+
+                    <p class="respuesta">Estamos actualizando el listado de beneficiarios que recibieron el giro. Si encontró su nombre en la primera etapa y está plenamente identificado, no ha perdido su beneficio. </p>
+                    <div class="ver-mas">
+                        <a class="vermas-link" href="#">
+                            <p>Ver más</p>
+                            <img src="img/abajo.svg" alt="flecha">
+                        </a>
+                    </div>
+                </div>
+                <div class="bloque">
+                    <p class="circulo">3</p>
+
+                    <p class="pregunta">¿Qué debo hacer porque me llegó el mensaje de que soy beneficiario y no he recibido el pago?  </p>
+
+                    <p class="respuesta">Si usted fue informado de que es beneficiario del programa mediante un mensaje de texto enviado por la entidad financiera en la cual tiene una cuenta o depósito activo, comuníquese con esa entidad financiera para averiguar como acceder a los recursos del ingreso solidario. Si usted no tiene una cuenta o depósito con el sistema financiero, y es elegido dentro del programa de Ingreso Solidario, pronto recibirá un mensaje con las instrucciones para hacer la apertura de una cuenta digital.  </p>
+                </div>
+                <div class="bloque">
+                    <p class="circulo">4</p>
+
+                    <p class="pregunta">Consulté en la pagina web y soy beneficiario, pero aún no me han llamado ni he recibido mensaje de texto ¿Qué debo hacer?</p>
+
+                    <p class="respuesta">Si usted encontró su nombre y cédula en la base de beneficiarios y no ha recibido un mensaje de texto, significa que hace parte de un ciclo posterior de pagos. Durante esta etapa, las entidades financieras se contactarán con usted para darle las indicaciones de como recibir el giro o hacer la apertura de un depósito simplificado a través de su celular. </p>
+                    <div class="ver-mas">
+                        <a class="vermas-link" href="#">
+                            <p>Ver más</p>
+                            <img src="img/abajo.svg" alt="flecha">
+                        </a>
+                    </div>
+                </div>
+                <div class="bloque">
+                    <p class="circulo">5</p>
+
+                    <p class="pregunta">¿Qué debemos hacer los que somos beneficiarios, pero no tenemos celular o cambiamos de número?</p>
+
+                    <p class="respuesta">Prosperidad social está trabajando con varias organizaciones y fuentes de datos para ubicarlo y contactarlo. Lo invitamos a consultar periodicamente la página.</p>
+                </div>
+                <div class="bloque azul">
+                    <h2>¿Tienes más preguntas?</h2>
+
+                    <p class="respuesta">Por favor no dudes en contactarnos para poderte dar la información que necesitas.</p>
+
+                    <button type="button">Contáctanos</button>
+                </div>
+                
+            </div>
+        </section>
+
+        <!--Pie de página-->
+        <footer>
+            <div class="contenedor-pie">
+                <div class="contenedor-pie__item iconico">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Prosperidad social</p>
+                    <p>Carrera 7 No.27 - 18/Bogotá  D.C, Colombia</p>
+                    <p>Codigo postal: 110311</p>
+                    <p>Horario de atención: 8:00 a.m - 2:00 p.m</p>
+                </div>
+                <div class="contenedor-pie__item logo-bajo">
+                    <img src="img/gov.co (1).png" alt="logo-gobierno">
+                    <div class="iconos">
+                        <div class="icono__item">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="icono__item">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="icono__item">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-pie__item iconico">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>Línea gratuita nacional: 01-8000-951100</p>
+                    <p>Línea de atención Paga (1)5188811</p>
+                    <p>Conmutador: (57+1)514 2060</p>
+                    <p>ingreso.solidario@prosperidadsocial.gov.co</p>
+                </div>
+            </div>
+            
+        </footer>
+
+    </div> 
+</body>
+</html>
