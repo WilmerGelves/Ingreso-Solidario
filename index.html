@@ -15,16 +15,16 @@
        <!--Navegación--> 
         <header id="cabeza" class="cabeza">
             <nav class="navegacion">
-                <a href="#" class="nav-link">Inicio</a>
-                <a href="#" class="nav-link">¿Qué es?</a>
-                <a href="#" class="nav-link"><img class="img-gobierno" src="img/logo-gobierno (1).svg" alt="logo-gobierno"></a>
-                <a href="#" class="nav-link">Entrega</a>
+                <a href="#principal" class="nav-link">Inicio</a>
+                <a href="#descripcion" class="nav-link">¿Qué es?</a>
+                <a href="#principal" class="nav-link"><img class="img-gobierno" src="img/logo-gobierno (1).svg" alt="logo-gobierno"></a>
+                <a href="#informacion" class="nav-link">Entrega</a>
                 <a href="#" class="nav-link consultar">Consultar</a>
             </nav>
         </header>
 
         <!--Formulario de consulta y  descripción breve del programa-->
-        <section class="consulta">
+        <section id="principal" class="consulta">
             <div class="contenedor-formulario">
                 <div class="formulario">
                     <form method="post">
@@ -85,7 +85,7 @@
 
         <!--Información del proyecto-->
         <h2 class="que-es">¿Qué es el ingreso solidario?</h2>
-        <section class="informacion">
+        <section id="descripcion" class="informacion">
             <div class="info-texto">
                 <p class="words">Es un esquema mediante el cual se entrega una transferencia monetaria en favor de los hogares en situación de pobreza y vulnerabilidad que no sean beneficiarios de programas sociales del estado.</p>
 
@@ -103,7 +103,7 @@
         </section>
 
         <!--Sección de bancos y tiempos de entrega-->
-        <section class="etapas-bancos">
+        <section id="informacion" class="etapas-bancos">
             <h2 class="titulo-etapas">Etapas de Entrega</h2>
             <div class="fechas">
                 <div class="fechas-item">
@@ -146,7 +146,7 @@
         </section>
 
         <!--Seccion de preguntas frecuentes-->
-        <section class="preguntas-frecuentes">
+        <section id="preguntas" class="preguntas-frecuentes">
             <h2>Preguntas Frecuentes</h2>
             <div class="pregunta-respuesta">
                 <div class="bloque">
@@ -197,7 +197,7 @@
                     <p class="respuesta">Prosperidad social está trabajando con varias organizaciones y fuentes de datos para ubicarlo y contactarlo. Lo invitamos a consultar periodicamente la página.</p>
                 </div>
                 <div class="bloque azul">
-                    <h2>¿Tienes más preguntas?</h2>
+                    <h>¿Tienes más preguntas?</h>
 
                     <p class="respuesta">Por favor no dudes en contactarnos para poderte dar la información que necesitas.</p>
 
@@ -208,7 +208,7 @@
         </section>
 
         <!--Pie de página-->
-        <footer>
+        <footer id="contacto">
             <div class="contenedor-pie">
                 <div class="contenedor-pie__item iconico">
                     <i class="fa-solid fa-location-dot"></i>

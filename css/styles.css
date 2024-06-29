@@ -48,7 +48,6 @@ nav{
     padding: 2vh;
     background-color: #0066d0;
     font-family: 'Myriad Pro light',sans-serif;
-    font-size: 20%;
 }
 
 .nav-link{
@@ -325,4 +324,5 @@ footer{
 }
 .icono__item{
     margin-right: 10px;
+    margin-bottom: 20px;
 }
