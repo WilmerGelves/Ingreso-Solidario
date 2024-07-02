@@ -40,7 +40,12 @@ header{
     width: 100%;
     position: fixed;
 }
-
+@media(max-width: 480px) {
+    header{
+        width: 100%;
+        position: static;
+    }
+}
 nav{
     display:flex;
     justify-content: space-evenly;
@@ -49,7 +54,6 @@ nav{
     background-color: #0066d0;
     font-family: 'Myriad Pro light',sans-serif;
 }
-
 .nav-link{
     display: inline-block;
     text-decoration: none;
@@ -58,11 +62,10 @@ nav{
     font-weight: bold;
     font-size: 2.7vh ; 
 }
-
 .nav-link:last-child{
     padding: .7vh 2.5vw;
     border: 2px solid transparent;
-    border-radius: 30px;
+    border-radius: 9vh;
     background-color: white;
     color: black;
 }
@@ -71,6 +74,35 @@ nav{
     width: 20.vw;
     height: 6.481vh;
 }
+
+@media(max-width: 480px) {
+    nav {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 2vh;
+        background-color: #0066d0;
+        font-family: 'Myriad Pro light',sans-serif;
+    }
+    .nav-link{
+        text-align: center;
+        width: 100%;
+        text-decoration: none;
+        margin: 1vh  3.646vw;
+        color: white;
+        font-weight: bold;
+        font-size:medium;
+    }
+    .nav-link:last-child{
+        width: 50%;
+        border: 2px solid transparent;
+        border-radius: 9vh;
+        background-color: white;
+        color: black;
+    }
+  }
+
 /*------------------------------------------*/
 /* SECCIÓN CONSULTA */
 .consulta{
@@ -81,7 +113,6 @@ nav{
     display: flex;
     padding-top: 5%;
 }
-
 .contenedor-formulario{
     display: flex;
     justify-content: space-around;
@@ -137,6 +168,31 @@ button{
 }
 
 
+@media(max-width: 480px) {
+    .consulta{
+        padding-top: 55%;
+    }
+    .contenedor-formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulario{
+        width: 80%;
+        background-color: white;
+        padding: 0 2% 2% 2%;
+        border-radius: 20px;
+        border: 1px solid black;
+    } 
+    .descripcion{
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+        font-size:medium;
+    }
+}
+
 /* CSS sección de información del proyecto */
 
 .que-es{
@@ -171,7 +227,25 @@ button{
 .icono-grande img{
     max-width: 100%;
 }
+@media(max-width: 480px) {
+    .informacion{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15vh;
+    }
+    .info-texto{
+        width: 80%;
+        text-align: center;
+        line-height:25px;
+    }
+    .icono-grande{
+        width: 80%;
+    }
 
+}
 /* Etapas  y tiempos de entrega*/
 
 /*Etapas*/
